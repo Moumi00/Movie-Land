@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane prefHeight="493.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogInViewerController">
+   <children>
+      <AnchorPane prefHeight="494.0" prefWidth="751.0" styleClass="bodybg" stylesheets="@application.css">
+         <children>
+            <VBox layoutX="190.0" layoutY="137.0" prefHeight="162.0" prefWidth="372.0">
+               <children>
+                  <HBox prefHeight="33.0" prefWidth="372.0">
+                     <children>
+                        <TextArea editable="false" minHeight="-Infinity" prefHeight="45.0" prefWidth="101.0" text="Handle:">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </TextArea>
+                        <TextField fx:id="handleTextField" prefHeight="45.0" prefWidth="251.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <effect>
+                              <Blend />
+                           </effect>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="372.0" />
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="33.0" prefWidth="372.0">
+                     <children>
+                        <TextArea editable="false" minHeight="-Infinity" prefHeight="45.0" prefWidth="109.0" text="Password:">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </TextArea>
+                        <PasswordField fx:id="passwordField" prefHeight="45.0" prefWidth="255.0">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="signUpButton" layoutX="190.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleSignUpButtonClicked" prefHeight="45.0" prefWidth="94.0" text="Sign Up" textFill="#0c0b11">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="logInButton" layoutX="468.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleLogInButtonClicked" prefHeight="45.0" prefWidth="94.0" text="Log In">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</FlowPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ArchiveViewerController">
+   <children>
+      <AnchorPane prefHeight="686.0" prefWidth="762.0">
+         <children>
+            <HBox layoutX="-3.0" prefHeight="50.0" prefWidth="769.0" style="-fx-background-color: #327fa8;">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="164.0" text="Favourite" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="162.0" text="Viewed" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="151.0" text="Reviewed" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="149.0" text="Rated" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="136.0" text="Wishlist" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <ListView fx:id="favoriteListView" layoutX="-2.0" layoutY="50.0" prefHeight="636.0" prefWidth="164.0" />
+            <ListView fx:id="viewListView" layoutX="163.0" layoutY="50.0" prefHeight="636.0" prefWidth="162.0" />
+            <ListView fx:id="reviewListView" layoutX="323.0" layoutY="50.0" prefHeight="636.0" prefWidth="151.0" />
+            <ListView fx:id="ratedListView" layoutX="474.0" layoutY="50.0" prefHeight="636.0" prefWidth="150.0" />
+            <ListView fx:id="wishListView" layoutX="623.0" layoutY="50.0" prefHeight="636.0" prefWidth="143.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</FlowPane>
